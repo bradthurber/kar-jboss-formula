@@ -2,7 +2,7 @@
 
 {%- if 'jboss' in salt['grains.get']('roles') %}
 
-# jboss symlinks <jboss_home>/domain/log to /var/log/jbossas/domain/log
+# JBoss symlinks <jboss_home>/domain/log to /var/log/jbossas/domain/log
 # during installation. We want the logging to be linked in-turn to an NFS mount
 
 sym_link_var_log_jbossas_domain_to_mnt_logs:
