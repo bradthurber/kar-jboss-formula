@@ -1,4 +1,4 @@
-{% from "jboss/map.jinja" import jboss_settings with context %}
+{% from "jboss/map.jinja" import jboss with context %}
 
 {%- if 'jboss' in salt['grains.get']('roles') %}
 
